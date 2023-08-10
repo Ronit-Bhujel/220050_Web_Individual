@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/header.css}">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/footer.css}">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/aboutus.css}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body >
+
+<header th:replace="~{/fragments/header.html}"></header>
+
+<main style="background-color: #cdebbc">
+  <div class="main-div" >
+    <h4>About Tech World ?</h4>
+    <p>Tech World is the leading online laptop store in Nepal with widest range of selections from gaming to ultrabooks. In Nepal Tech World is the only company where you can choose from various range of laptops in every sector including Gaming, Multimedia, Ultra books, Business series, Workstations and Consumer Models. Our stock carries most highly regarded computing solutions in the industry for demanding customers who need the highest performance machines with the most reliable components. Tech World Pvt.Ltd is also highly regarded for our excellent customer service and technical support quality.</p>
+    <p>In addition to quality products, customer service is among our highest priorities. Our philosophy is to extend ourselves indefinitely to our customers in providing for their every need. We will never compromise our efforts to provide the “best overall value” for our customers.</p>
+      <p>It is through our dedication to excellence that we bring you www.techworld.com.np, your trusted source for high quality and reliable laptops and IT Gadgets. With delivery facilities Within Whole Country and over 15 years of experience in the industry, Tech World Pvt.Ltd is your best choice for all of the latest high-performance computing solutions. This website features up-to-date technology information, money-saving promotions and the highest quality products for the lowest prices possible.</p>
+    <h4>Service</h4>
+    <p>“Total customer satisfaction” is our standard. We view every customer as a customer for life. You will receive expert service and professional advice from the moment we answer your call or email. Our knowledgeable account managers will guide you through your whole experience with Tech World, and continue to be your point of contact after the sale. In addition, our highly trained technicians are ready and eager to help you with any problems that arise. Furthermore, 6 Days In A week  service assures you quick and expert service when you need it. Your complete and total satisfaction is our greatest ambition!</p>
+    <h4>Value</h4>
+    <p>Take it from the experts or compare for yourself. Tech World strives to always provide you the highest quality product at the best value possible. Just take a look at the quality of components and service for your Money. One look and you’ve got to agree, Tech World is the “best overall value”.</p>
+    <h4>Customization</h4>
+    <p>We understand how important it can be to make your PC stand out from the rest. Here at Tech World, we offer one of the largest arrays of some of the most unique computer components, aesthetic customization options, and services on the market.</p>
+    <h4>Our Team</h4>
+    <p>Tech World employs some of the best and most knowledgeable professionals in the industry. Their passion for PCs helps insure a positive and hassle free experience when ordering any of our products or services.</p>
+
+  </div>
+</main>
+
+
+<section id="newsletter" class="section-p1 section-m1">
+  <div class="newstext">
+    <h4>Sign Up For Newletters</h4>
+    <p>
+      Get E-Mail updates about our latest shop and
+      <span>special offers.</span>
+    </p>
+  </div>
+  <div class="form">
+    <input type="text" placeholder="Your Email Address" />
+    <button class="normal">Sign Up</button>
+  </div>
+</section>
+
+
+<footer th:replace="~{/fragments/footer.html}"></footer>
+</body>
+</html>

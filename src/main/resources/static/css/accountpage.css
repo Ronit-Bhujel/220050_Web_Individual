@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color:#F0F3F4!important;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color:#222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color:#465b52;
+    margin: 15px 0 20px 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+
+/* main */
+main {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 40%;
+    border: 2px solid grey;
+    box-shadow: 5px 5px 5px grey;
+}
+.main-title {
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    max-width: 385px;
+    margin-top: 15px;
+}
+.labels {
+    color: grey;
+}
+.inputs {
+    display: flex;
+    height: 42px;
+    width: 380px;
+    border-radius: 12px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 45px;
+    width: 300px;
+    margin-top: 10px;
+}
+.button-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 35px;
+    background-color: green;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    border-radius: 12px;
+}
+
+.button-b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 35px;
+    background-color: cornflowerblue;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    border-radius: 12px;
+}
+
+.button-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 35px;
+    background-color: orangered;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    border-radius: 12px;
+}
+
+.button-a:hover {
+    color: white;
+}
+.button-b:hover {
+    color: white;
+}
+.button-c:hover {
+    color: white;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("/images/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+
+
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+
+#newsletter p span{
+    color: #ffbd27;
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+
+@media (max-width: 645px) {
+    .main-container {
+        width: 100%;
+    }
+    .main-form {
+        width: 100%;
+    }
+}
+@media (max-width:388px) {
+    .inputfile {
+        width: 100px;
+    }
+    .for-profile-picbutton {
+        justify-content: center;
+        width: 50%;
+    }
+    .profile-section {
+        flex-direction: column;
+        width: 100%;
+    }
+    .inputs {
+        width: 320px;
+    }
+}

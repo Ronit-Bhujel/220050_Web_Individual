@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cart</title>
+  <link rel="stylesheet" th:href="@{/css/header.css}">
+  <link rel="stylesheet" th:href="@{/css/footer.css}">
+  <link rel="stylesheet" th:href="@{/css/cart.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header th:replace="~{/fragments/header.html}"></header>
+  <main>
+    <div class="order-table">
+      <form>
+        <table class="content-table">
+          <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Product Quantity</th>
+            <th>product Price</th>
+            <th>Action</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr th:each="cartProduct:${cartItems}">
+            <td th:text="${cartProduct.getProducts().name}">Name of User</td>
+            <td th:text="${cartProduct.getProducts().quantity}">Email of User</td>
+            <td th:text="${cartProduct.getProducts().price}">Address of User</td>
+            <td><a class="delete_button" th:href="@{~/cart/remove/}+${cartProduct.id}">Delete</a></td>
+          </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </main>
+
+  <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+          <h4>Sign Up For Newletters</h4>
+          <p>
+              Get E-Mail updates about our latest shop and
+              <span>special offers.</span>
+          </p>
+      </div>
+      <div class="form">
+          <input type="text" placeholder="Your Email Address" />
+          <button class="normal">Sign Up</button>
+      </div>
+  </section>
+  <footer th:replace="~{/fragments/footer.html}"></footer>
+</body>
+</html>

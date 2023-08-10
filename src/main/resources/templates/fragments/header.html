@@ -1,0 +1,22 @@
+<section id="header">
+<a href="#"><img src="/images/tech.png" class="logo" alt=""></a>
+
+<div>
+    <ul id="navbar">
+        <li><a th:href="@{/dashboard}">Home</a></li>
+        <li><a th:href="@{/dashboard/aboutus}">About Us</a></li>
+        <li><a th:href="@{/user/contact}">Contact Us</a></li>
+        <li><a th:href="@{/cart}">Cart List</a></li>
+        <li><a th:href="@{/user/profile}" text="${userDetail.fullname}"><i class="fa-solid fa-user"></i></a></li>
+        <form method="post" action="/logout">
+            <li><button type="submit" class="logout-button">
+                Logout <i class="fa-solid fa-sign-out"></i>
+            </button></li>
+        </form>
+    </ul>
+</div>
+<div id="mobile">
+    <a th:href="@{/cart}"><i class="far fa-shopping-bag"></i></a>
+    <i id="bar" class="fas fa-outdent"></i>
+</div>
+</section>
