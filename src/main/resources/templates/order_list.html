@@ -69,7 +69,6 @@
                         <th>Product Name</th>
                         <th>Product Quantity</th>
                         <th>Product Price</th>
-                        <th>Action</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -79,7 +78,6 @@
                         <td th:text="${item.getProducts().name}">Name</td>
                         <td th:text="${item.getProducts().quantity}">Quantity</td>
                         <td th:text="${item.getProducts().price}">Price</td>
-                        <td><a class="delete-button" th:href="@{~/admin/removeProduct/} + ${item.id}">Delete</a></td>
                     </tr>
                     </tbody>
                 </table>

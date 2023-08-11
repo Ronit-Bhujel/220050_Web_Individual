@@ -77,10 +77,9 @@
             <td th:text="${products.name}"></td>
             <td th:text="${products.quantity}"></td>
             <td th:text="${products.price}"></td>
-            <td> <a class="edit-button"   th:href="@{~/admin/editproducts/}+${products.id}">Edit</a></td>
-            <td> <a class="delete-button" th:href="@{~/admin/deleteproducts/}+${products.id}">Delete</a></td>
-
-         </tr>
+            <td> <a class="edit-button" th:href="@{~/admin/editproducts/}+${products.id}">Edit</a></td>
+            <td><a class="delete-button" th:href="@{~/admin/deleteproducts/}+${products.id}">Delete</a></td>
+          </tr>
           </tbody>
         </table>
         <script
